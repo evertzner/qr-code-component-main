@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(212deg, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 0.8rem;
+  width: 14rem;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 0.6rem;
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 85vw;
+    padding: 4vw;
+    border-radius: 4vw;
+    gap: 3vw;
+  }
+}
+.container__qr img {
+  width: 100%;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 375px) {
+  .container__qr img {
+    border-radius: 3vw;
+  }
+}
+.container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 12px;
+}
+@media only screen and (max-width: 375px) {
+  .container__text {
+    margin-bottom: 5vw;
+  }
+}
+.container__text__title {
+  font-weight: 700;
+}
+@media only screen and (max-width: 375px) {
+  .container__text__title {
+    font-size: 6vw;
+  }
+}
+.container__text__instructions {
+  font-size: 11px;
+  color: hsl(220deg, 15%, 55%);
+}
+@media only screen and (max-width: 375px) {
+  .container__text__instructions {
+    font-size: 4vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
